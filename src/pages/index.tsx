@@ -82,7 +82,7 @@ const Home: NextPage = () => {
             <label className="label">
               <span className="label-text">URL</span>
             </label>
-            <input type="text" value={input} onChange={(e)=>setInput(e.target.value)} placeholder="www.example.com" className="input input-bordered" />
+            <input type="text" value={input} onChange={(e)=>setInput(e.target.value)} placeholder="www.example.com" className="input input-bordered" required/>
           </div>
          
          
@@ -92,7 +92,7 @@ const Home: NextPage = () => {
 
           <div>
            {
-            url? <p className="text-center"><a href={url}>{url}</a></p> :
+            url? <p className="text-center">{url}</p> :
             <p></p>
            }
           </div>

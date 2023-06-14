@@ -27,7 +27,7 @@ const Page = () => {
   const qid :any = id
 
   if (id === undefined) {
-    return <div>Error</div>;
+    return <div>Please Wait</div>;
   }
   const {data,isLoading} = api.example.getById.useQuery(qid)
   if(isLoading ){
