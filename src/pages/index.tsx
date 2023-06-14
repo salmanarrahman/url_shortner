@@ -46,7 +46,7 @@ const Home: NextPage = () => {
 
   const mutateFn = () => {
     const randomString = generateRandomString();
-    const url = "thejsexpert.com/"+randomString
+    const url = "thejsexpert.tech/"+randomString
     setUrl(url)
     addData.mutate({
       address:input,
@@ -92,7 +92,7 @@ const Home: NextPage = () => {
 
           <div>
            {
-            url? <p className="text-center">{url}</p> :
+            url? <p className="text-center"><a href={url}>{url}</a></p> :
             <p></p>
            }
           </div>
